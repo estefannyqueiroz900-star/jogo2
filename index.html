@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10090d">
+    <title>O Mentalista | Arquivos CBI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="fundo"></div>
+
+    <header class="topo">
+        <a class="logo" href="#" id="logoInicio">CBI<span>.</span></a>
+        <div class="topo-centro">CALIFORNIA BUREAU OF INVESTIGATION</div>
+        <div class="status-online"><span></span> CASO ABERTO</div>
+    </header>
+
+    <main>
+        <section id="telaInicio" class="tela ativa">
+            <div class="hero">
+                <div class="selo">ARQUIVO CONFIDENCIAL Nº 016</div>
+                <p class="subtitulo">UM JOGO DE INVESTIGAÇÃO</p>
+                <h1>O <span>MENTALISTA</span></h1>
+                <p class="descricao">
+                    Cada rosto esconde uma pista. Use sua memória,
+                    encontre os pares e prove que você pensa como
+                    um verdadeiro investigador.
+                </p>
+
+                <div class="detalhes">
+                    <div><strong>32</strong><span>CARTAS</span></div>
+                    <div><strong>16</strong><span>PARES</span></div>
+                    <div><strong>90s</strong><span>TEMPO</span></div>
+                </div>
+
+                <button id="btnJogar" class="botao-principal">
+                    ▶ INICIAR INVESTIGAÇÃO
+                </button>
+                <p class="aviso">O TEMPO COMEÇA AO INICIAR.</p>
+            </div>
+
+            <div class="regras">
+                <article>
+                    <span class="icone">♧</span>
+                    <h3>ENCONTRE OS PARES</h3>
+                    <p>Vire duas cartas e encontre personagens iguais.</p>
+                </article>
+                <article>
+                    <span class="icone">＋</span>
+                    <h3>GANHE PONTOS</h3>
+                    <p>Acerto vale 100 pontos. Erro desconta 20.</p>
+                </article>
+                <article>
+                    <span class="icone">◷</span>
+                    <h3>SEJA RÁPIDO</h3>
+                    <p>Encontre todos os pares antes que o tempo acabe.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="telaJogo" class="tela">
+            <div class="cabecalho-jogo">
+                <div>
+                    <p class="subtitulo">CASO EM ANDAMENTO</p>
+                    <h2>Encontre as evidências</h2>
+                </div>
+                <button id="btnVoltarInicio" class="botao-secundario">← MENU</button>
+            </div>
+
+            <div class="painel">
+                <div class="indicador">
+                    <span>TEMPO RESTANTE</span>
+                    <strong id="tempo">01:30</strong>
+                </div>
+                <div class="indicador">
+                    <span>PONTUAÇÃO</span>
+                    <strong id="pontos">0000</strong>
+                </div>
+                <div class="indicador">
+                    <span>PARES</span>
+                    <strong id="pares">00/16</strong>
+                </div>
+                <div class="indicador">
+                    <span>TENTATIVAS</span>
+                    <strong id="tentativas">0</strong>
+                </div>
+            </div>
+
+            <div class="progresso">
+                <div id="barraProgresso"></div>
+            </div>
+
+            <p id="status" class="status" aria-live="polite">
+                Analise as cartas e encontre os pares.
+            </p>
+
+            <div id="tabuleiro" class="tabuleiro"
+                 aria-label="Tabuleiro do jogo da memória"></div>
+        </section>
+
+        <section id="telaResultado" class="tela">
+            <div class="resultado">
+                <div id="simboloResultado" class="simbolo-resultado">★</div>
+                <p class="subtitulo">RELATÓRIO FINAL DO CASO</p>
+                <h2 id="tituloResultado">INVESTIGAÇÃO CONCLUÍDA</h2>
+                <p id="mensagemResultado"></p>
+
+                <div class="pontuacao-final">
+                    <span>SUA PONTUAÇÃO</span>
+                    <strong id="pontuacaoFinal">0</strong>
+                </div>
+
+                <div class="botoes-resultado">
+                    <button id="btnNovamente" class="botao-principal">
+                        ↻ JOGAR NOVAMENTE
+                    </button>
+                    <button id="btnVoltarResultado" class="botao-secundario">
+                        VOLTAR AO MENU
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="criadora">
+        <span>ARQUIVOS CBI · JOGO DA MEMÓRIA</span>
+        <span>DESENVOLVIDO POR <strong>ESTEFANNY</strong> · 2º ANO EMTI</span>
+    </footer>
+</body>
+</html>
